@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>聯絡欸嚕踢 | LT PÂTISSERIE</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./img/LT-fav.ico" type="image/x-icon">
 
@@ -19,6 +20,7 @@
             <div class="brand">
                 <a href="https://fifisshh.github.io/LT_0804webcls/"></a>
             </div>
+            <a href="#" class="menu-btn"></a>
             <!-- 導覽列項目-選單 -->
             <div class="link">
                 <ul>
@@ -53,7 +55,7 @@
 
         <!-- 表單 -->
         <div id="card">
-            <div class="left">
+            <div class="left" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
               <div class="logo">
                 <div class="circle1"></div>
                 <div class="circle2"></div>
@@ -64,7 +66,7 @@
               <div class="card-rect"></div>
             </div>
             
-            <div class="right">
+            <div class="right" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
                 
             <form method="post" id="form">
               <label for="name">姓名</label>
@@ -118,6 +120,11 @@
     <!-- </div> -->
     <!-- </div> -->
 
+    <!-- AOS CDN -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kid421.github.io/Web_JavaScript_GoToElement/goToElement.js"></script>

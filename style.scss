@@ -31,10 +31,17 @@ $mobile: 767px;
       top: 0;
       left: calc(25% - 90px);
       transform: translatex(-50%);
+      @media screen and (max-width: $tablet){
+        display: none;
+      }
     }
     .link ul {
       display: flex;
       list-style: none;
+      @media screen and (max-width: $pc){
+        padding-left: 100px;
+        letter-spacing: 0;
+      }
       li {
         overflow: hidden;
         .en,
@@ -73,6 +80,7 @@ $mobile: 767px;
         }
       }
     }
+
   
     .brand a {
       width: 75px;
@@ -88,6 +96,10 @@ $mobile: 767px;
       transition: 0.3s;
       &:hover {
         opacity: 0.75;
+      }
+      @media screen and (max-width: $tablet){
+          width: 65px;
+          height: 65px;
       }
     }
   
@@ -111,9 +123,15 @@ $mobile: 767px;
           opacity: 0.4;
         }
       }
-    @media screen and (max-width: $mobile) {
-        padding-right: 10px;
-    }
+      @media screen and (max-width: $tablet){
+        padding-right: 30px;
+          a {
+            padding: 0 5px;
+            }
+        }
+        @media screen and (max-width: $mobile) {
+            padding-right: 10px;
+        }
     }
     .order {
     //   border: 1px solid #000;
@@ -135,9 +153,43 @@ $mobile: 767px;
           }
         }
       }
-    @media screen and (max-width: $mobile) {
+      @media screen and (max-width: $pc){
+          padding-right: 44px;
+      }
+      @media screen and (max-width: $tablet){
+          padding-right: 20px;
+        a {
+            padding: 0 5px;
+        }
+      }
+        @media screen and (max-width: $mobile) {
         display: none;
     }
+    }
+
+    // hamburger menu
+    .menu-btn {
+        display: block;
+        width: 24px;
+        margin: 1em;
+        position: absolute;
+        top: 12%;
+        left: 10px;
+        // transform: translateY(-50%);
+        &:before, &:after {
+            background-color: #004884;
+            content: '';
+            display: block;
+            height: 2px;
+        }
+        &:before {
+            box-shadow: 0 8px 0 #004884;
+            margin-bottom: 14px;
+        }
+        @media screen and (min-width: $pc){
+            display: none;
+          }
+        
     }
   }
   // navbar End
