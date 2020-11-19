@@ -141,6 +141,12 @@
   opacity: 0.4;
 }
 
+@media screen and (max-width: 767px) {
+  #navbar-sub .icon {
+    padding-right: 10px;
+  }
+}
+
 #navbar-sub .order {
   float: right;
   position: absolute;
@@ -168,14 +174,32 @@
   opacity: 0.5;
 }
 
+@media screen and (max-width: 767px) {
+  #navbar-sub .order {
+    display: none;
+  }
+}
+
 .banner {
   width: 100%;
   height: 300px;
   margin-top: 70px;
-  background-image: url(../img/banner-contact.jpg);
+  background-image: url(./img/bannercontact.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media screen and (max-width: 1023px) {
+  .banner {
+    background-position: right;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .banner {
+    background-position: left;
+  }
 }
 
 .title {
@@ -210,6 +234,21 @@
       grid-template-columns: 40% 60%;
 }
 
+@media screen and (max-width: 1023px) {
+  #card {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #card {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    width: 100%;
+    height: 100vh;
+  }
+}
+
 #card .left {
   background-color: #6a89b9;
   border-top-left-radius: 10px;
@@ -217,11 +256,23 @@
   position: relative;
 }
 
+@media screen and (max-width: 767px) {
+  #card .left {
+    border-radius: 0;
+  }
+}
+
 #card .left .logo {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 10% 20%;
       grid-template-columns: 10% 20%;
+}
+
+@media screen and (max-width: 767px) {
+  #card .left .logo {
+    display: none;
+  }
 }
 
 #card .left .logo .circle1 {
@@ -235,6 +286,13 @@
   z-index: 1;
 }
 
+@media screen and (max-width: 1023px) {
+  #card .left .logo .circle1 {
+    width: 20px;
+    height: 20px;
+  }
+}
+
 #card .left .logo .circle2 {
   width: 25px;
   height: 25px;
@@ -246,6 +304,14 @@
   left: 0;
 }
 
+@media screen and (max-width: 1023px) {
+  #card .left .logo .circle2 {
+    width: 20px;
+    height: 20px;
+    left: 8px;
+  }
+}
+
 #card .left .logo h4 {
   display: inline-block;
   color: #004884;
@@ -255,6 +321,13 @@
   letter-spacing: 5px;
   padding-top: 6px;
   padding-left: 80px;
+}
+
+@media screen and (max-width: 1023px) {
+  #card .left .logo h4 {
+    padding-top: 8px;
+    padding-left: 74px;
+  }
 }
 
 #card .left h1 {
@@ -270,6 +343,12 @@
           transform: translate(-50%, -50%);
 }
 
+@media screen and (max-width: 767px) {
+  #card .left h1 {
+    text-align: center;
+  }
+}
+
 #card .left hr {
   border: none;
   width: 50px;
@@ -280,6 +359,13 @@
   right: 20%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 767px) {
+  #card .left hr {
+    top: 70%;
+    right: 18%;
+  }
 }
 
 #card .left .card-rect {
@@ -325,6 +411,19 @@
   font-size: 16px;
 }
 
+@media screen and (max-width: 1023px) {
+  #card .right #form {
+    margin-left: 70px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #card .right #form {
+    margin-left: 50px;
+    height: 240px;
+  }
+}
+
 #card .right #form input[type=name], #card .right #form input[type=email] {
   display: block;
   width: 65%;
@@ -349,6 +448,12 @@
   font-size: 16px;
   margin: 10px 0 25px;
   padding: 8px 10px;
+}
+
+@media screen and (max-width: 1023px) {
+  #card .right textarea {
+    width: 270px;
+  }
 }
 
 #card .right .btn {
@@ -473,6 +578,15 @@
   z-index: -1;
 }
 
+@media screen and (max-width: 767px) {
+  .cir1 {
+    width: 240px;
+    height: 240px;
+    top: 280px;
+    right: -80px;
+  }
+}
+
 .cir2 {
   width: 450px;
   height: 450px;
@@ -483,5 +597,15 @@
   top: 780px;
   left: -100px;
   z-index: -1;
+}
+
+@media screen and (max-width: 767px) {
+  .cir2 {
+    width: 350px;
+    height: 350px;
+    top: 1130px;
+    background-color: #004884;
+    opacity: 0.3;
+  }
 }
 /*# sourceMappingURL=style.css.map */
